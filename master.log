@@ -1,0 +1,87 @@
+MainThread:2020-12-01 16:18:45,969:DEBUG:Using Least loaded scheduler
+Thread-1:2020-12-01 16:19:17,955:INFO:Job 0 arrived.
+Thread-2:2020-12-01 16:19:18,006:INFO:Type:M Task 0_M0 scheduled on worker 2
+Thread-3:2020-12-01 16:19:19,059:INFO:Type:M Task 0_M0 completed on worker 2
+Thread-2:2020-12-01 16:19:19,065:INFO:Type:R Task 0_R0 scheduled on worker 2
+Thread-3:2020-12-01 16:19:21,056:INFO:Type:R Task 0_R0 completed on worker 2
+Thread-1:2020-12-01 16:19:21,168:INFO:Job 1 arrived.
+Thread-1:2020-12-01 16:19:21,178:INFO:Job 2 arrived.
+Thread-2:2020-12-01 16:19:22,058:INFO:Type:M Task 1_M0 scheduled on worker 2
+Thread-2:2020-12-01 16:19:22,058:INFO:Type:M Task 1_M1 scheduled on worker 2
+Thread-2:2020-12-01 16:19:22,059:INFO:Type:M Task 2_M0 scheduled on worker 1
+Thread-2:2020-12-01 16:19:22,059:INFO:Type:M Task 2_M1 scheduled on worker 2
+Thread-1:2020-12-01 16:19:22,279:INFO:Job 3 arrived.
+Thread-2:2020-12-01 16:19:22,279:INFO:Type:M Task 3_M0 scheduled on worker 1
+Thread-2:2020-12-01 16:19:22,279:INFO:Type:M Task 3_M1 scheduled on worker 2
+Thread-2:2020-12-01 16:19:22,279:INFO:Type:M Task 3_M2 scheduled on worker 1
+Thread-2:2020-12-01 16:19:22,279:INFO:Type:M Task 3_M3 scheduled on worker 2
+Thread-3:2020-12-01 16:19:23,584:INFO:Type:M Task 2_M0 completed on worker 1
+Thread-3:2020-12-01 16:19:23,590:INFO:Type:M Task 3_M0 completed on worker 1
+Thread-3:2020-12-01 16:19:24,064:INFO:Type:M Task 3_M3 completed on worker 2
+Thread-3:2020-12-01 16:19:24,591:INFO:Type:M Task 3_M2 completed on worker 1
+Thread-3:2020-12-01 16:19:25,066:INFO:Type:M Task 1_M1 completed on worker 2
+Thread-3:2020-12-01 16:19:25,091:INFO:Type:M Task 2_M1 completed on worker 2
+Thread-3:2020-12-01 16:19:25,107:INFO:Type:M Task 3_M1 completed on worker 2
+Thread-2:2020-12-01 16:19:25,107:INFO:Type:R Task 2_R0 scheduled on worker 1
+Thread-2:2020-12-01 16:19:25,113:INFO:Type:R Task 3_R0 scheduled on worker 2
+Thread-2:2020-12-01 16:19:25,113:INFO:Type:R Task 3_R1 scheduled on worker 2
+Thread-3:2020-12-01 16:19:26,067:INFO:Type:M Task 1_M0 completed on worker 2
+Thread-2:2020-12-01 16:19:26,102:INFO:Type:R Task 1_R0 scheduled on worker 2
+Thread-2:2020-12-01 16:19:26,102:INFO:Type:R Task 1_R1 scheduled on worker 1
+Thread-3:2020-12-01 16:19:26,593:INFO:Type:R Task 2_R0 completed on worker 1
+Thread-3:2020-12-01 16:19:28,070:INFO:Type:R Task 3_R0 completed on worker 2
+Thread-1:2020-12-01 16:19:28,151:INFO:Job 4 arrived.
+Thread-2:2020-12-01 16:19:28,173:INFO:Type:M Task 4_M0 scheduled on worker 2
+Thread-2:2020-12-01 16:19:28,173:INFO:Type:M Task 4_M1 scheduled on worker 1
+Thread-2:2020-12-01 16:19:28,173:INFO:Type:M Task 4_M2 scheduled on worker 2
+Thread-3:2020-12-01 16:19:29,066:INFO:Type:R Task 3_R1 completed on worker 2
+Thread-1:2020-12-01 16:19:29,151:INFO:Job 5 arrived.
+Thread-2:2020-12-01 16:19:29,154:INFO:Type:M Task 5_M0 scheduled on worker 2
+Thread-2:2020-12-01 16:19:29,154:INFO:Type:M Task 5_M1 scheduled on worker 1
+Thread-1:2020-12-01 16:19:29,565:INFO:Job 6 arrived.
+Thread-3:2020-12-01 16:19:29,586:INFO:Type:R Task 1_R1 completed on worker 1
+Thread-1:2020-12-01 16:19:30,186:INFO:Job 7 arrived.
+Thread-2:2020-12-01 16:19:32,618:INFO:Type:M Task 6_M0 scheduled on worker 2
+Thread-3:2020-12-01 16:19:32,619:INFO:Type:R Task 1_R0 completed on worker 2
+Thread-2:2020-12-01 16:19:32,619:INFO:Type:M Task 7_M0 scheduled on worker 1
+Thread-2:2020-12-01 16:19:32,619:INFO:Type:M Task 7_M1 scheduled on worker 3
+Thread-2:2020-12-01 16:19:32,619:INFO:Type:M Task 7_M2 scheduled on worker 1
+Thread-2:2020-12-01 16:19:32,619:INFO:Type:M Task 7_M3 scheduled on worker 2
+Thread-3:2020-12-01 16:19:32,628:INFO:Type:M Task 5_M1 completed on worker 1
+Thread-1:2020-12-01 16:19:32,724:INFO:Job 8 arrived.
+Thread-1:2020-12-01 16:19:32,725:INFO:Job 9 arrived.
+Thread-2:2020-12-01 16:19:32,725:INFO:Type:M Task 8_M0 scheduled on worker 1
+Thread-2:2020-12-01 16:19:32,725:INFO:Type:M Task 8_M1 scheduled on worker 2
+Thread-2:2020-12-01 16:19:32,742:INFO:Type:M Task 9_M0 scheduled on worker 3
+Thread-3:2020-12-01 16:19:33,067:INFO:Type:M Task 4_M0 completed on worker 2
+Thread-2:2020-12-01 16:19:33,770:INFO:Type:M Task 9_M1 scheduled on worker 1
+Thread-3:2020-12-01 16:19:33,770:INFO:Type:M Task 4_M1 completed on worker 1
+Thread-3:2020-12-01 16:19:34,073:INFO:Type:M Task 4_M2 completed on worker 2
+Thread-3:2020-12-01 16:19:34,261:INFO:Type:M Task 7_M1 completed on worker 3
+Thread-2:2020-12-01 16:19:37,130:INFO:Type:R Task 4_R0 scheduled on worker 2
+Thread-2:2020-12-01 16:19:37,131:INFO:Type:R Task 4_R1 scheduled on worker 2
+Thread-3:2020-12-01 16:19:37,131:INFO:Type:M Task 9_M0 completed on worker 3
+Thread-3:2020-12-01 16:19:37,143:INFO:Type:M Task 5_M0 completed on worker 2
+Thread-3:2020-12-01 16:19:37,158:INFO:Type:M Task 8_M0 completed on worker 1
+Thread-2:2020-12-01 16:19:37,158:INFO:Type:R Task 5_R0 scheduled on worker 3
+Thread-3:2020-12-01 16:19:37,608:INFO:Type:M Task 7_M0 completed on worker 1
+Thread-3:2020-12-01 16:19:37,634:INFO:Type:M Task 7_M2 completed on worker 1
+Thread-3:2020-12-01 16:19:37,655:INFO:Type:M Task 9_M1 completed on worker 1
+Thread-2:2020-12-01 16:19:37,672:INFO:Type:R Task 9_R0 scheduled on worker 1
+Thread-3:2020-12-01 16:19:38,084:INFO:Type:M Task 6_M0 completed on worker 2
+Thread-3:2020-12-01 16:19:38,100:INFO:Type:M Task 8_M1 completed on worker 2
+Thread-2:2020-12-01 16:19:38,100:INFO:Type:R Task 6_R0 scheduled on worker 1
+Thread-2:2020-12-01 16:19:38,100:INFO:Type:R Task 6_R1 scheduled on worker 1
+Thread-2:2020-12-01 16:19:38,102:INFO:Type:R Task 8_R0 scheduled on worker 2
+Thread-3:2020-12-01 16:19:39,086:INFO:Type:M Task 7_M3 completed on worker 2
+Thread-2:2020-12-01 16:19:39,096:INFO:Type:R Task 7_R0 scheduled on worker 2
+Thread-2:2020-12-01 16:19:39,096:INFO:Type:R Task 7_R1 scheduled on worker 2
+Thread-3:2020-12-01 16:19:39,611:INFO:Type:R Task 9_R0 completed on worker 1
+Thread-3:2020-12-01 16:19:39,699:INFO:Type:R Task 6_R1 completed on worker 1
+Thread-3:2020-12-01 16:19:40,278:INFO:Type:R Task 5_R0 completed on worker 3
+Thread-3:2020-12-01 16:19:42,613:INFO:Type:R Task 6_R0 completed on worker 1
+Thread-3:2020-12-01 16:19:43,091:INFO:Type:R Task 8_R0 completed on worker 2
+Thread-3:2020-12-01 16:19:44,092:INFO:Type:R Task 4_R0 completed on worker 2
+Thread-3:2020-12-01 16:19:44,120:INFO:Type:R Task 4_R1 completed on worker 2
+Thread-3:2020-12-01 16:19:44,153:INFO:Type:R Task 7_R0 completed on worker 2
+Thread-3:2020-12-01 16:19:44,169:INFO:Type:R Task 7_R1 completed on worker 2
