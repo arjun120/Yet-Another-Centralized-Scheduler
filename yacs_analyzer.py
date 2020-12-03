@@ -10,10 +10,13 @@ import numpy as np
 master_log = open(sys.argv[1])
 worker_log = open(sys.argv[2])
 
+# Pattern to match the job arrival logs
 job_arrival_pattern = r'Thread-[\d]:(.+):INFO:Job\s([\d]+)\sarrived\.'
 job_completion_pattern = r'Thread-[\d]:(.+):INFO:.*\s.*\s([\d]+)_[MR]{1}[\d]+\scompleted\son\sworker\s[\d]+'
+# Pattern to extract the type of scheduler from the first line of the log file
 scheduler_type_pattern = r'.*:(.+)'
 
+# job_execution_stats is a dictionary which holds the execution time for each job by job id
 job_execution_stats = dict()
 match_flag = 0
 scheduler_type = ''
@@ -38,11 +41,15 @@ for line in master_log:
 for job_id in job_execution_stats:
     job_execution_stats[job_id].append((datetime.strptime(job_execution_stats[job_id][1],'%Y-%m-%d %H:%M:%S,%f') - datetime.strptime(job_execution_stats[job_id][0],'%Y-%m-%d %H:%M:%S,%f')).total_seconds())
 
+# Pattern to match the task arrival logs
 task_arrival_pattern = r'Thread-[\d]:(.+):INFO:Task\s(.+)\sarrived\son\sworker\s([\d]+)'
 task_completion_pattern = r'Thread-[\d]:(.+):INFO:Task\s(.+)\sran\sfor\s\d+\son\sworker\s([\d]+)'
 
+# task_execution_stats is a dictionary to hold the execution times for each task belonging to various jobs
 task_execution_stats = dict()
 task_count_workers = dict()
+# graph_info is a dictionary to which contains two lists for each worker, one for timestamps throughout the execution of the worker and another for the corresponding
+# number of tasks running on each worker for each timestamp
 graph_info = dict()
 
 for line in worker_log:
@@ -74,7 +81,8 @@ for worker in task_execution_stats.keys():
     for task_id in task_execution_stats[worker].keys():
         task_execution_stats[worker][task_id].append((datetime.strptime(task_execution_stats[worker][task_id][1],'%Y-%m-%d %H:%M:%S,%f') - datetime.strptime(task_execution_stats[worker][task_id][0],'%Y-%m-%d %H:%M:%S,%f')).total_seconds())
 
-
+# The job and task statistics collected above is neatly compiled and displayed in a tabular format
+# The mean and median task and job completion times are recorded
 job_completion_times = []
 task_completion_times = []
 print('Yet Another Centralized Scheduler: ',"\033[1m" + scheduler_type + "\033[0m")
@@ -110,6 +118,7 @@ print('-'*44)
 
 colors = iter(cm.plasma(np.linspace(0, 1, 5)))
 
+# The following supporting structures and functions are used to plot a grouped bar chart for the mean and median job and task execution times
 labels = ['Job Execution time','Task Execution time']
 means = [mean(job_completion_times), round(mean(task_completion_times),4)]
 medians = [median(job_completion_times), round(median(task_completion_times),4)]
@@ -135,6 +144,8 @@ name(bars2)
 fig.tight_layout()
 plt.savefig('Statistics for' + scheduler_type.strip('Using') + '.png')
 
+# The following section is used to plot a figure containing three plots, each for a particular worker
+# Each plot depicts the number of tasks running on the worker over time
 from matplotlib.pyplot import figure
 
 figure(figsize = (15,9))
